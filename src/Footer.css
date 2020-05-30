@@ -1,0 +1,70 @@
+* {
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    felx: 1;
+    background-color: #F49F0A;
+    width: 100%;
+    bottom: 0;
+    min-height: 10vh;
+
+}
+
+
+.linkedin {
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-top: 10%;
+    margin-left: 25%;
+}
+
+
+.copyright {
+    text-align: center;
+
+    color: antiquewhite;
+    margin-bottom: 4vh;
+    margin-top: -2vh;
+}
+
+
+
+
+
+@media screen and (max-width: 669px) {
+    .footer {
+        height: 20vh;
+    }
+
+
+    .linkedin {
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    }
+
+
+        .copyright {
+
+    text-align: center;
+    margin-top: 40px;
+    color: antiquewhite;
+            font-size: 15px;
+}
+
+
+
+
+
+
+}
+

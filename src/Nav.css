@@ -1,0 +1,164 @@
+* {
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
+nav {
+  z-index: 3;
+  display:flex ;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh ;
+  background-color: #F49F0A;
+}
+
+.logo {
+  color: #faebd7;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 23px;
+
+}
+.logo p{
+  color: antiquewhite;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+
+}
+.nav-links li{
+  list-style: none;
+}
+
+.nav-links a{
+  color: antiquewhite;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+.codepic {
+  height:  25px;
+  width: 25px;
+  padding-top: 10px;
+
+
+}
+
+.burger{
+  display: none;
+  cursor: pointer;
+}
+
+
+
+.burger div{
+  width: 27px;
+  height: 3px;
+  background-color: antiquewhite;
+  margin-top: 6px;
+  margin-bottom: 6px;
+
+}
+
+
+
+
+@media screen and (max-width: 768px){
+
+  html body{
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    z-index: 2;
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background: #F49F0A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: 0.3s;
+
+
+
+  }
+
+
+
+
+
+    .nav-links li {
+      opacity: 0;
+    }
+
+    .burger{
+      display: block;
+      }
+
+
+
+}
+
+.nav-active{
+  transform: translateX(0%);
+  transition-duration: 0.3s;
+}
+
+@keyframes navLinkFade {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+
+
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+
+  }
+  
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+
+
+}
+
+.toggle .line2{
+  opacity: 0;
+
+}
+
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+
+}
